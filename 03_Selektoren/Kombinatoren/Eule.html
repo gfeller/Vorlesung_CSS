@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        aside * + *{
-            margin-top : 50px;
+        * {
+            margin: 0;
         }
+
+        aside * + *{
+           margin-top : 50px;
+           background: yellow;
+        }
+
+        /*Moderne alternative
+        aside :not(:first-child)
+        {
+            margin-top : 50px;
+            background: yellow;
+        }
+        */
     </style>
 </head>
 <body>
