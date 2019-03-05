@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        li{
+            display: block;
+            padding: 10px;
+            position: relative;
+        }
+        li::before{
+            content: attr(data-value);
+            position: absolute;
+            left: -10px;
+            top: -10px;
+            border: 1px black solid;
+            border-radius: 100%;
+            padding: 5px;
+            background: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li data-value="80">WED1</li>
+    <li data-value="70">WED2</li>
+    <li data-value="50">WED3</li>
+</ul>
+</body>
+</html>
